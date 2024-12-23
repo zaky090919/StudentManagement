@@ -92,7 +92,7 @@
         android:layout_height="wrap_content"
         android:layout_marginEnd="20dp"
         android:layout_marginBottom="32dp"
-        android:backgroundTint="#50C2C9"
+        android:backgroundTint="#5CE3ED"
         android:padding="12dp"
         android:text="Save"
         android:textColor="@android:color/white"
