@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Student management</string>
+    <string-array name="keterangan_array">
+        <item>Hadir</item>
+        <item>Sakit</item>
+        <item>Izin</item>
+        <item>Absen</item>
+    </string-array>
+</resources>

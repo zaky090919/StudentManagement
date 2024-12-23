@@ -1,0 +1,75 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Spinner for selecting class -->
+    <Spinner
+        android:id="@+id/spinnerKelas"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:spinnerMode="dropdown"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <!-- EditText to input date -->
+    <EditText
+        android:id="@+id/etTanggal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Pilih Tanggal"
+        android:focusable="false"
+        android:clickable="true"
+        android:inputType="none"
+        android:padding="12dp"
+        android:layout_marginBottom="8dp"
+        android:minHeight="48dp"
+        android:background="?android:attr/selectableItemBackground" />
+
+    <!-- TextView to display the selected day -->
+    <TextView
+        android:id="@+id/tvHari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Hari: "
+        android:textSize="16sp"
+        android:textColor="#000000"
+        android:paddingTop="8dp"
+        android:layout_marginBottom="8dp" />
+
+    <!-- Button to trigger search -->
+    <Button
+        android:id="@+id/btnCari"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cari Absensi"
+        android:layout_marginTop="16dp"
+        android:minHeight="48dp"
+        android:backgroundTint="#50C2C9"
+        android:textColor="@android:color/white" />
+
+    <!-- RecyclerView to display the attendance list -->
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/recyclerViewAbsensi"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1" />
+
+    <!-- Edit button at the bottom-right -->
+    <Button
+        android:id="@+id/btnEdit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="end|bottom"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:minHeight="48dp"
+        android:text="Edit"
+        android:backgroundTint="#50C2C9"
+        android:textColor="@android:color/white" />
+</LinearLayout>

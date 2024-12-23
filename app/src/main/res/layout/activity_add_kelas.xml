@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddKelasActivity">
+
+    <!-- EditText untuk Nama Kelas -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNamaKelas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Kelas"
+        android:inputType="text"
+        android:textColorHint="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"/>
+
+    <!-- EditText untuk Nama Dosen -->
+    <androidx.appcompat.widget.AppCompatEditText
+        android:id="@+id/etNamaDosen"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nama Dosen"
+        android:inputType="text"
+        android:textColorHint="#808080"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNamaKelas"
+        android:layout_marginTop="16dp"
+        android:padding="16dp"/>
+
+    <!-- Button untuk Menambah Kelas -->
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddKelas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Tambah Kelas"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/etNamaDosen"
+        android:layout_marginTop="32dp"
+        android:padding="16dp"
+        android:backgroundTint="#03DAC6"
+        android:textColor="#000000"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,74 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/gambar1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="0dp"
+        android:layout_marginTop="2dp"
+        android:src="@drawable/gambar1" />
+
+    <TextView
+        android:id="@+id/txtwell"
+        android:layout_width="243dp"
+        android:layout_height="62dp"
+        android:layout_below="@+id/gambar1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="24dp"
+        android:fontFamily="serif"
+        android:gravity="center"
+        android:text="Wellcome Back"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/gambar2"
+        android:layout_width="281dp"
+        android:layout_height="247dp"
+        android:layout_below="@+id/txtwell"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/bg1"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/edit_username"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/gambar2"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background"
+        android:hint="Username"
+        android:padding="12dp" />
+
+    <EditText
+        android:id="@+id/edit_password"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_username"
+        android:hint="Password"
+        android:padding="12dp"
+        android:inputType="textPassword"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/edittext_background" />
+
+    <Button
+        android:id="@+id/btn_login"
+        android:layout_width="380dp"
+        android:layout_height="60dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/edit_password"
+        android:text="Login"
+        android:backgroundTint="#03DAC6"
+        android:textColor="#FFFFFF"
+        android:layout_marginBottom="16dp" />
+
+</RelativeLayout>
